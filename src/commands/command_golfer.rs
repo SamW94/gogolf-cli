@@ -25,7 +25,22 @@ fn create_golfer(args: &[&str]) {
         
         let runtime = tokio::runtime::Runtime::new().unwrap();
         runtime.block_on(async {
-            create_golfer_handler(username, email_address, &password).await.unwrap();
+            match create_golfer_handler(username, email_address, &password).await {
+                Ok((status, body)) => {
+                    if status.is_success() {
+                        println!("Golfer created successfully!");
+                        println!("Server response: {body}");
+                    } else {
+                        println!("Server returned an error:");
+                        println!("Status: {status}");
+                        println!("Message: {body}");
+                    }
+                }
+                Err(err) => {
+                    println!("Failed to send HTTP request.");
+                    println!("Error: {}", err);
+                }
+            }
         });
     }
 }
