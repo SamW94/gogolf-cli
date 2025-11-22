@@ -20,7 +20,7 @@ fn create_golfer(args: &[&str]) {
     } else {
         let username = args[0];
         let email_address = args[1];
-        let sensitive_info_name = format!("password for {username}");
+        let sensitive_info_name = format!("password");
         let password = sensitive_info_input(&sensitive_info_name);
         
         let runtime = tokio::runtime::Runtime::new().unwrap();
