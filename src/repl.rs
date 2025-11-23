@@ -20,7 +20,7 @@ pub fn get_commands() -> HashMap<&'static str, CLICommand> {
         }),
         ("golfer", CLICommand{
             name: "golfer".into(),
-            description: "Commands for creating golfers".into(),
+            description: "Commands for creating/finding/updating and deleting golfers".into(),
             callback: Box::new(command_golfer),
         })
     ])
