@@ -12,7 +12,7 @@ pub async fn create_golfer_handler(username: &str, email_address: &str, password
     });
     
     let response = http_client
-        .post("http://localhost:7117/api/golfers")
+        .post("http://localhost:8080/api/golfers")
         .header("Content-Type", "application/json")
         .body(golfer_json.to_string())
         .send()
