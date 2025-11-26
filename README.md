@@ -10,13 +10,11 @@ You're currently looking at the code for the *CLI tool* - that's the command lin
 - calculate a golfer's handicap index, and their playing handicap for any course in the database
 - do any other things I can dream up as I mindlessly top balls down the driving range
 
-## 🏌️ Related Repositories (Under Construction™)
+## 🏌️ Related Repositories (More Coming Soon™)
 
-- [gogolf-api](https://github.com/SamW94/gogolf-api): the code repository for gogolf's backend microservice/API. 
-- gogolf-web: the code repository for the front-end
-- gogolf-qa: code for automated test suites that run against the service
-- gogolf-local: docker-compose files and scripts for running the service locally
-- gogolf-terraform: the infrastructure-as-code used to deploy the gogolf website
+- [gogolf-api](https://github.com/SamW94/gogolf-api): gogolf's backend microservice/API
+- [gogolf-web](https://github.com/SamW94/gogolf-web): the front-end
+
 
 ## 🛺 What's in the box? 
 
