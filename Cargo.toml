@@ -2,6 +2,9 @@
 name = "gogolf-cli"
 version = "0.0.1"
 edition = "2024"
+include = [
+    "src"
+]
 
 [dependencies]
 reqwest = "0.12.24"
