@@ -1,6 +1,6 @@
 # gogolf-cli
 
-⛳ Welcome to the code repository for gogolf's CLI tool! gogolf is a toy project I've created to demonstrate understanding of full-stack software development, DevOps and having a *crazy* high handicap. Having said that, I will hopefully get it up-and-running as a web app at some point.
+⛳ Welcome to the code repository for gogolf's CLI tool! gogolf is a toy project I've created to demonstrate understanding of full-stack software development, DevOps and having a *crazy* high handicap. Having said that, I will hopefully get it up-and-running as a useable app at some point.
 
 You're currently looking at the code for the *CLI tool* - that's the command line tool that is developed in parallel with the API which *will hopefully at some point be able to*:
 
@@ -13,8 +13,6 @@ You're currently looking at the code for the *CLI tool* - that's the command lin
 ## 🏌️ Related Repositories (More Coming Soon™)
 
 - [gogolf-api](https://github.com/SamW94/gogolf-api): gogolf's backend microservice/API
-- [gogolf-web](https://github.com/SamW94/gogolf-web): the front-end
-
 
 ## 🛺 What's in the box? 
 
@@ -24,7 +22,7 @@ gogolf's CLI tool is written in Rust 🦀 - I just think it's cool. The asyncron
 
 ### Pre-requisites
 
-*N.B. the source code currently isn't compiled and packaged neatly for your to install. It will be in future.*
+*N.B. the source code currently isn't compiled and packaged neatly for you to install. It will be in future.*
 
 - These instructions are for Linux/Unix/WSL. I'm not writing a Windows guide, and you can't make me.
 - You must have the [Rust toolchain](https://rust-lang.org/tools/install/) installed.
@@ -80,4 +78,3 @@ Type a password:
 Golfer created successfully!
 Server response: {"id":"62f1e229-e633-48e7-991c-5b8f7e345d00","created_at":"2025-11-23T10:09:34.448123Z","updated_at":"2025-11-23T10:09:34.448123Z","email":"test@email.com","username":"test"}
 ```
-
