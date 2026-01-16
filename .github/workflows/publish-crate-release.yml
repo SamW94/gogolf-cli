@@ -2,8 +2,8 @@ name: Build and publish a Rust crate (dev)
 
 on:
   push:
-    branches:
-      - 'dev'
+    tags:
+      - 'v*'
 
 jobs:
   release-plz-release:

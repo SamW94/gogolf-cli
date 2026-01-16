@@ -14,7 +14,6 @@
 
 		git add CHANGELOG.md
 
-
 4. Update the version in the `Cargo.toml` file to remove the `rc-*` suffix and leave only the SemVar numbers (i.e. 0.0.1-rc-alpha would be changed to 1.0.0)
 	
 5. Push your changes to the remote repository on GitHub.
@@ -26,7 +25,7 @@
 
 7. Merge the PR to **main**. **Do not squash the commits. Do not delete the release branch yet.**
 
-8. Switch to the `main` branch and create a tag that matches the release version you decided to use above. 
+8. Switch to the `main` branch and create a tag that matches the release version you used in the `Cargo.toml` file. 
 
 		git switch main
 		git tag v0.0.1
