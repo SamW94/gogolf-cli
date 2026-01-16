@@ -1,7 +1,12 @@
 [package]
 name = "gogolf-cli"
-version = "0.0.1"
+description = "CLI tool for interacting with the gogolf API"
+license = "MIT"
+version = "0.0.1-rc-beta"
 edition = "2024"
+include = [
+    "src"
+]
 
 [dependencies]
 reqwest = "0.12.24"
