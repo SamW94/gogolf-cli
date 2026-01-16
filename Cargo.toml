@@ -2,7 +2,7 @@
 name = "gogolf-cli"
 description = "CLI tool for interacting with the gogolf API"
 license = "MIT"
-version = "0.0.1-dev"
+version = "0.0.1-alpha"
 edition = "2024"
 include = [
     "src"
