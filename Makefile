@@ -8,6 +8,12 @@ build-local:
 	cargo build
 	./target/debug/gogolf-cli
 
+build-ci:
+    cargo fmt
+	cargo clippy --all-targets --all-features -- -D warnings
+	cargo test
+	cargo build -- release
+
 run:
 	cargo run
 
