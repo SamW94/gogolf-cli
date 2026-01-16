@@ -26,7 +26,6 @@ jobs:
         uses: release-plz/action@v0.5
         with:
           command: release
-          registry: ${{ github.repository }}
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CARGO_REGISTRY_TOKEN: ${{ secrets.CRATES_API_KEY }}
