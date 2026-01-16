@@ -1,0 +1,32 @@
+name: Build and publish a Rust crate (branch)
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!dev'
+      - '!main'
+      - '!r-*'
+
+jobs:
+  release-plz-release:
+    name: Build and publish Rust crate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 #v5.0.0
+
+      - name: Setup Rust toolchain
+        uses: actions-rust-lang/setup-rust-toolchain@1780873c7b576612439a134613cc4cc74ce5538c #v1.15.2
+
+      - name: Run release plz
+        uses: release-plz/action@v0.5
+        with:
+          command: release
+          registry: ${{ github.repository }}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CRATES_API_KEY }}
