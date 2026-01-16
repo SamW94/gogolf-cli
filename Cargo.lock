@@ -239,7 +239,7 @@ dependencies = [
 
 [[package]]
 name = "gogolf-cli"
-version = "0.0.1-rc-alpha"
+version = "0.0.1-rc-beta"
 dependencies = [
  "reqwest",
  "rpassword",
