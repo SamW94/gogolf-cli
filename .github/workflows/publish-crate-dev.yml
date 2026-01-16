@@ -3,10 +3,7 @@ name: Build and publish a Rust crate (branch)
 on:
   push:
     branches:
-      - '**'
-      - '!dev'
-      - '!main'
-      - '!r-*'
+      - 'dev'
 
 jobs:
   release-plz-release:
