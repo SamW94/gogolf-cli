@@ -10,7 +10,7 @@ jobs:
     name: Build and publish Rust crate
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     
     steps: 
       - name: Checkout code

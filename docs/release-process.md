@@ -14,14 +14,14 @@
 
 		git add CHANGELOG.md
 
-4. Update the version in the `Cargo.toml` file to remove the `rc-*` suffix and leave only the SemVar numbers (i.e. 0.0.1-rc-alpha would be changed to 1.0.0)
+4. Update the version in the `Cargo.toml` file to remove the `rc-*` suffix and leave only the SemVar numbers (i.e. 0.0.1-rc-alpha would be changed to 0.0.1)
 	
 5. Push your changes to the remote repository on GitHub.
 
 		git commit -m "chore: release v0.0.1"
 		git push --set-upstream origin r-0-0-1
 
-6. Open a PR and review the changes. Paste the relevant section of the `CHANGELOG.md` file into the PR body instead of the PR template that's already there.
+6. Open a PR and review the changes. Update the CHANGELOG.md file and copy your changes into the PR body instead of the PR template that's already there.
 
 7. Merge the PR to **main**. **Do not squash the commits. Do not delete the release branch yet.**
 
