@@ -19,9 +19,6 @@ jobs:
       - name: Setup Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@1780873c7b576612439a134613cc4cc74ce5538c #v1.15.2
 
-      - name: Change Cargo.toml version
-        run: sed -E 's/(version = "[0-9]+\.[0-9]+\.[0-9]+-rc)[^"]*"/\1"/' Cargo.toml
-
       - name: Run release plz
         uses: release-plz/action@v0.5
         with:
