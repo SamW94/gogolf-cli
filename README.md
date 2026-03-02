@@ -13,6 +13,7 @@ You're currently looking at the code for the *CLI tool* - that's the command lin
 ## 🏌️ Related Repositories (More Coming Soon™)
 
 - [gogolf-api](https://github.com/SamW94/gogolf-api): gogolf's backend microservice/API
+- [gogolf-local](https://github.com/SamW94/gogolf-local): Tools for running the gogolf API on your local machine with Docker
 
 ## 🛺 What's in the box? 
 
@@ -26,7 +27,7 @@ gogolf's CLI tool is written in Rust 🦀 - I just think it's cool. The asyncron
 
 - These instructions are for Linux/Unix/WSL. I'm not writing a Windows guide, and you can't make me.
 - You must have the [Rust toolchain](https://rust-lang.org/tools/install/) installed.
-- You can run the CLI indepdently from the API, but it's a bit pointless, so you *should* have the [gogolf API running](https://rust-lang.org/tools/install/). 
+- You can run the CLI independently from the API, but it's a bit pointless, so you *should* have the [gogolf API running](https://github.com/SamW94/gogolf-local?tab=readme-ov-file#-how-do-i-run-it). 
 
 ### Using `cargo run`
 
