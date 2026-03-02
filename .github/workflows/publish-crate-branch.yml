@@ -1,4 +1,4 @@
-name: Build and publish a Rust crate (dev)
+name: Build and publish a Rust crate (branch)
 
 on:
   push:
